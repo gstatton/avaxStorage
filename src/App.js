@@ -43,7 +43,7 @@ class App extends React.Component {
       <div>
         <nav className="navbar navbar-dark shadow" style={{backgroundColor: "#1b2021", height: "60px", color: "white"}}>
           <b>Distributed File Manager</b>
-          <span style={{float: "right"}}>{this.state.account}</span>
+          <span style={{float: "right", color: "white"}}>{this.state.account}</span>
         </nav>
         <IPFSViewer state = {this.state} />
         <IPFSUploader state = {this.state} />
