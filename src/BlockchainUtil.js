@@ -29,14 +29,14 @@ export class GetContract extends React.Component {
 export class GetAccount extends React.Component {
     async getAccount(web3) {
         // return await web3.eth.getAccounts();
-        return await web3.eth.requestAccounts().then(console.log)
+        return await web3.eth.requestAccounts().then(console.log);
     }
 }
 
 const loginToWallet = async () => {
     if (typeof window.ethereum !== 'undefined') {
         console.log('MetaMask is installed!');
-        const accounts = await web3.eth.requestAccounts().then(console.log)
+        const accounts = await web3.eth.requestAccounts().then(console.log);
     } else {
         return false;
     }
