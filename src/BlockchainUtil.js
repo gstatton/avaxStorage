@@ -31,3 +31,14 @@ export class GetAccount extends React.Component {
         return await web3.eth.getAccounts();
     }
 }
+
+const loginToWallet = async () => {
+    if (typeof window.ethereum !== 'undefined') {
+        console.log('MetaMask is installed!');
+        const accounts = await ethereum.request({ method: 'eth_requestAccounts' });
+        return true;
+    } else {
+        return false;
+    }
+
+}
