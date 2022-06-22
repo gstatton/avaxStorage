@@ -34,7 +34,7 @@ export class GetAccount extends React.Component {
 }
 
 const loginToWallet = async () => {
-    if (typeof window.ethereum !== 'undefined') {
+    if (typeof window.web3 !== 'undefined') {
         console.log('MetaMask is installed!');
         const accounts = await web3.eth.requestAccounts().then(console.log);
     } else {
