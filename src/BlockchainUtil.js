@@ -2,6 +2,8 @@ import React from 'react';
 import Web3 from 'web3'
 import TruffleContract from '@truffle/contract';
 
+const Web3 = require('web3');
+
 export class GetWeb3 extends React.Component {
     async getWeb3() {
         let web3 = window.web3;
